@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+<title>Lovely Hotel</title>
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+
+
+  <body>
+
+
+<script language="javascript">
+
+function putdashes()
+{
+	var i=0,k=0,p;
+	a=document.getElementById("a").value;
+
+	if(a.length()>15)
+	alert("card Number is too large");
+	
+	while(i<a.length())
+	{
+		
+		p=a.charAt(i);
+		
+		if(p=='-')
+		k=i;
+		i++;
+	}
+	if((l-k)==2)
+	a=a+'-';
+	document.getElementById("a").value=a;
+}
+
+function ftoupper()
+{
+	a=document.getElementById("a")
+	b=a.value;
+	var p=0,r=0;
+	while(p=indexOf(' ',r)!=-1)
+	{
+		if(b.charAt(p+1)>='a' && b.charAt(p+1)<='z')
+		b=b.subtring(0,p)+(b.charAt(p+1)+32)+b.substring((p+2),(l-1))+" ";
+		r=p+1;
+                                   
+	}
+                  a.value=b;
+}
+</script>
+
+<header id="header">
+  <div class="container">
+    <div class="row">
+       <div class="col-md-12">
+          <a href="index.html" title="Lovely Hotel" class="logo">
+           <img src="images/logo.jpg" alt="Lovely Hotel" title="Lovely Hotel">
+          </a>
+        </div>
+       <div class="col-md-12">
+         	<span class="contact pull-right">
+              +91 9794970191
+        	</span>
+       </div>
+    </div>
+ </div>
+</header>
+  <nav id="nav">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-24">
+              <ul>
+                <li><a href="index.html" title="Home">HOME</a></li>
+                <li><a href="about-us.html" title="About-Us">ABOUT US</a></li>
+                <li><a href="rooms-tariff.html" title="Rooms & Tariff">ROOMS & TARIFF</a></li>
+                <li><a href="photogallery.html" title="Photogallery">PHOTOGALLERY</a></li>
+                <li><a href="restaurant.html" title="restaurant">RESTAURANT</a></li>
+                <li class="active"><a href="contact-us.html" title="Contact-Us">CONTACT US</a></li>
+				<li><a href="payment.html"title="payment">PAYMENT</a></li>
+				<li><a href="booking.html"title="booking">BOOKING</a></li>
+				<li><a href="login.html"title="login">LOGIN</a></li>
+			  </ul>
+          </div>
+        </div>
+      </div>    
+  </nav>
+<section id="banner">
+  <div class="container">
+     <div class="row">
+      	<div class="col-md-24">
+     	</div>
+    </div>
+  </div>
+</section>
+<div class="container">
+	<div class="wel-wrapper align">
+		<div class="row">
+    		<div class="col-md-24">
+		<img src="images\untitled1.png" width=1000px height=345px></img>
+	<br>
+	<br>
+        		<h1 class="heading">Booking</h1>
+            	<div class="row">
+
+        			<div class="col-md-14">
+                     <div class="Booking-result"></div>
+            	   <form id="contact-form" method="post" novalidate="novalidate">
+
+                        <div class="form-group">
+
+                          <label>Name</label>
+
+                          <input type="text" class="form-control" placeholder="name" name="name" onchange="ftoupper()">
+
+                        </div>
+
+                        <div class="form-group">
+
+                          <label>Email</label>
+
+                          <input type="text" class="form-control" placeholder="Email" name="Email">
+
+                        </div>
+
+                           <div class="form-group">
+
+                          <label>Mobile number</label>
+
+                          <input type="text" class="form-control" placeholder="+91 10X " name="Mobile number">
+
+                        </div>
+
+                         <div class="form-group">
+
+                          <label>Check In</label>
+
+                         <input type="text"class="form-control"placeholder="dd-mm-yy" name="name" onchange="putdashes()">
+
+                        </div>
+
+                        <div class="form-group">
+                         <label>Check Out</label>
+                        <input type="text"class="form-control"placeholder="dd-mm-yy" name="name" onchange="putdashes()">
+                            
+                         </div>
+                        <div class="form-group">
+                         <label>Suite</label>
+                       <input type="text"class="form-control"placeholder="Delux"name="name">
+                         </div>
+                
+                        <button type="submit" class="btn btn-default submit-btn">Submit</button>
+
+                  </form>
+            </div>
+           <div class="col-md-10">
+            	<strong>Address</strong><br/>
+                <p class="text">
+                	The Mall, Dalhousie - 176304,<br/>
+					Himachal Pradesh, INDIA.
+                </p><br/>
+                <strong>Mobile No:</strong><br/>
+                <a href="tel:+91 9794970191">+91 9794970191</a><br/><br/>
+                <a href="tel:+91 9123148493">+91 9123148493</a><br/>
+                <strong>Email Id: </strong><br/>
+                <a href="mailto:anmolakkesherwani1999@gmail.com">anmolakkesherwani1999@gmail.com</a><br/>
+				</div>
+        		</div>
+     		</div>
+  		</div>
+ 	   		
+   </div>
+</div>
+<footer id="footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-24">
+             <a href="index.html" title="Home">HOME</a>
+             <a href="about-us.html" title="About-Us">ABOUT US</a>
+             <a href="rooms-tariif.html" title="Rooms & Tarriff">ROOMS & TARIFF</a>
+             <a href="photogallery.html" title="Photogallery">PHOTOGALLERY</a>
+             <a href="restaurant.html" title="restaurant">RESTAURANT</a>
+             <a href="contact-us.html" title="Contact-Us">CONTACT US</a>
+<a href="payment.html"title="payment">PAYMENT</a>
+<a href="booking.html"title="booking">BOOKING</a>
+<a href="login.html"title="login">LOGIN</a>
+          </div>
+       </div>
+  </div>        
+</footer>
+<div class="copy-right">
+  <div class="container">
+      <div class="row">
+                   <div class="col-md-12">
+              <span class="pull-right">Website designed by : Anmol Kesherwani</span>
+         </div>
+      </div>
+ </div>
+</div>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<title>lovely hotel | PAYMENT</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+  <link href="css/jquery.bxslider.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body background="../images/background.jpg">
+<header id="header">
+  <div class="container">
+    <div class="row">
+       <div class="col-md-12">
+          <a href="index.html" title="Lovely Hotel" class="logo">
+       <img src="images/logo.jpg" alt="Lovely Hotel" title="Lovely Hotel">
+          </a>
+		  <span class= "heading" style="font-size:45px;">Lovely Hotel</span>
+        </div>
+       <div class="col-md-12">
+         	<span class="contact pull-right" style="background-color:darkslategrey;">
+            	<a href="mailto:info@lovely.com">Email: info@lovely.com</a> &nbsp;
+             	<a href="tel:+919123148493">Call: +91 9123148493</a>
+                
+        	</span>
+       </div>
+    </div>
+ </div>
+</header>
+  <nav id="nav">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-24">
+              <ul>
+               <li class="active"><a href="index.html" title="Home">HOME</a></li>
+                  <li><a href="about-us.html" title="About-Us">ABOUT US</a></li>
+                  <li><a href="rooms-tariff.html" title="Rooms & Tarriff">ROOMS & TARIFF</a></li>
+                  <li><a href="photogallery.html" title="Photogallery">PHOTOGALLERY</a></li>
+                  <li><a href="restaurant.html" title="restaurant">RESTAURANT</a></li>
+                  <li><a href="contact-us.html" title="Contact-Us">CONTACT US</a></li>
+<li><a href="payment.html" title="payment">PAYMENT</a></li>
+<li><a href="booking.html"title="booking">BOOKING</a><li>
+<li><a href="login.html"title="login">LOGIN</a><li>
+       			</ul>
+          </div>
+        </div>
+      </div>    
+  </nav>
+<div class="container">
+	<div class="wel-wrapper align">
+		<div class="row">
+    		<div class="col-md-24">
+        		<h1 class="heading">Payment Gateway</h1>
+            	<div class="row">
+        			<div class="col-md-14">
+                     <div class="payment-gateway"></div>
+            	   <form id="contact-form" onsubmit="paid()" action="index.html">
+
+                        <div class="form-group">
+						
+						<label>Card Type</label>
+						
+						<select class="form-control" name="cardtype">
+						<option value="visa">VISA</option>
+						<option value="master-card">Master Card</option>
+                        <option value="maestro">Maestro</option>
+                        <option value="rupay">Rupay</option>
+                        <option value="american-express">American Express</option>
+						</select>
+						
+						</div>
+						<div class="form-group">
+
+                          <label>Card Number</label>
+
+                          <input type="text" id="card1" value="" class="form-control" placeholder="XXXX XXXX XXXX XXXX" name="cardno" maxlength="16" minlength="16" required>
+
+                        </div>
+
+						<div class="form-group">
+
+                          <label>Card Holder's Name</label>
+
+                          <input type="text" id="card2" value=""  class="form-control" placeholder="Enter Name" name="cardname" minlength="8" required>
+
+                        </div>
+						<div class="form-group">
+
+                          <label>CVV</label>
+
+                          <input type="password" id="card3" value=""  class="form-control" placeholder="XXX" name="cvv" maxlength="3" minlength="3" required>
+
+                        </div>
+						<div class="form-group">
+
+                          <label>PIN</label>
+
+                          <input type="password" id="card4" value=""  class="form-control" placeholder="XXXX" name="pin" maxlength="4" minlength="4" required>
+
+                        </div>
+                        <button type="submit" class="btn btn-default submit-btn">Submit</button>
+
+                  </form>
+            </div>
+        		</div>
+     		</div>
+  		</div>
+ 	   		
+   </div>
+</div>
+<footer id="footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-24"  style="background-color:darkslategrey;">
+             
+                
+          </div>
+       </div>
+  </div>        
+</footer>
+<footer id="footer">
+<div class="copy-right">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+             srijan singh, paleti poojitha,anmol kesharwani,vamsi krishna
+          </div>
+         <div class="col-md-12">
+              <span class="pull-right">Website designed by: &copySrijan singh</span>
+         </div>
+      </div>
+    </div>
+</div>
+</footer>
+<script src="js/payment.js"></script>
+  </body>
+</html>
